@@ -3,23 +3,23 @@ import os
 #argparse is used to parse command-line arguments
 import argparse
 
-
 parser = argparse.ArgumentParser(
-    description="Clean up directory and put files into corresponding folders based on file extension."
+    description="Clean up a directory by organizing files into subfolders based on their extensions.",
+    epilog="Example: python app.py --path /home/user/documents --remove-empty",
+    formatter_class=argparse.RawDescriptionHelpFormatter
 )
 
 parser.add_argument(
     "--path",
     type=str,
-    # default is the current working directory
     default=".",
-    help="Path of the directory to be cleaned",
+    help="Path of the directory to be cleaned (default: current directory)"
 )
 
 parser.add_argument(
     "--remove-empty",
     action="store_true",
-    help="Remove empty folders after cleaning",
+    help="Remove empty folders after organizing files"
 )
 
 # Parse the arguments given by the user and extract the path
