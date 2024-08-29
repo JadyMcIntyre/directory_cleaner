@@ -25,3 +25,9 @@ Run the script from the command line with the following syntax:
 ```bash
 python app.py --path ./path/to/directory
 ```
+
+If you want to remove empty folders as well, use the following command:
+
+```bash
+python app.py --path ./path/to/directory --remove-empty
+```
