@@ -22,6 +22,12 @@ The `directory_cleaner` is a Python script that helps organize files in a specif
 
 Run the script from the command line with the following syntax:
 
+For help:
+```bash
+python app.py -h
+```
+
+To clean the directory:
 ```bash
 python app.py --path ./path/to/directory
 ```
